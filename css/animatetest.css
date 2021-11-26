@@ -1,0 +1,200 @@
+.ml9 {
+    position: relative;
+    font-weight: 400;
+    font-size: 5em;
+    text-align: center;
+    padding-top: 0.4em;
+    padding-bottom: 0.1em;
+
+  }
+  
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.4em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+    
+  }
+  
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  body{
+    background-color: #eae7e0;
+  }
+
+
+  h1.ml8 {
+    font-weight: 900;
+    font-size: 4.5em;
+    color: #fff;
+    width: 3em;
+    height: 3em;
+  }
+  
+  .ml8 .letters-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 1em;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .ml8 .letters {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    line-height: 0.7em;
+    right: -0.12em;
+    top: -0.1em;
+    -webkit-text-stroke: 2px #4f7b86;
+  }
+  
+  .ml8 .bang {
+    font-size: 1.4em;
+    top: auto;
+    left: 0.1em;
+  }
+  
+  .ml8 .circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .ml8 .circle-white {
+    width: 3em;
+    height: 3em;
+    border: 2px dashed white;
+    border-radius: 2em;
+  }
+  
+  .ml8 .circle-dark {
+    width: 4em;
+    height: 4em;
+    background-color: #4f7b86;
+    border-radius: 3em;
+    z-index: 1;
+  }
+  
+  .ml8 .circle-dark-dashed {
+    border-radius: 2.4em;
+    background-color: transparent;
+    border: 2px dashed #4f7b86;
+    width: 4.2em;
+    height: 4.2em;
+  }
+
+  .ml16 {
+  color: white;
+  padding: 40px 0;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+
+
+html, body{
+	height: 100%;
+}
+body{
+	margin: 0 auto;
+}
+
+.scrollAnim{
+	height: 100%;
+	opacity: 0;
+	transition: 0.8s;
+	display: flex;
+	padding: 0 0;
+}
+
+.scrollAnim .content{
+	margin: auto;
+}
+.scrollAnim.anim{
+	opacity: 1;
+}
+.content{
+	display: block;
+	margin: 0;
+	transition: all 0.8s;
+	padding-left: 0;
+
+}
+.anim .content{
+	transition-delay: 0.1s;
+}
+
+
+.anim-top{
+	transform: translate(0,150px);
+}
+.anim-left{
+	transform: translate(-150px,0);
+}
+.anim .anim-top{
+	transform: translate(0,0);
+}
+.anim .anim-left{
+	transform: translate(0,0);	
+}
+
+.steps{
+	width: 100%;
+	margin: auto;
+}
+
+
+
+.scroller{
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+
+@keyframes fadeIn {
+	from{ 
+		opacity:  0; 
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes fadeInOut {
+	0%{ 
+		opacity:  0; 
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+    

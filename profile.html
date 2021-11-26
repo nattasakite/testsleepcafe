@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- link to icon n bootstrap -->
+    <script src="https://kit.fontawesome.com/e28f4cb1ad.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "60rem";
+        document.getElementById("main").style.right = "60rem";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.top= "0";
+        }
+    </script> 
+
+    <style>
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: none; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+        ::-webkit-scrollbar-thumb {
+            background: rgb(116, 116, 116); 
+            border-radius: 5px;
+        }
+        body { overflow: overlay; }
+    </style>
+
+</head>
+
+<body>
+    <div class="topnav " id="myTopnav">
+    <!-- centered nav item -->
+    <div class="d-flex justify-content-around">
+    <!-- logo -->
+    <a class="btn active" href="homepage.php" >
+        <i class="fas fa-coffee" ></i> 
+    </a>
+    <a href="homepage.php" class="menu" >HOME</a> 
+    <div class="dropdown">  <!-- menu -->
+        <button class="dropbtn">MENU  <!-- menu-title -->
+        <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-content">  <!-- menu-dropdown -->
+                        <a href="beverage.php">BEVERAGE</a>
+                        <a href="dessert.php">DESSERT</a>
+                        <a href="food.php">FOOD</a>
+                        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
+        </div> </div>
+    <a href="contact.html" >CONTACT</a> 
+    <a class="btn" href="cart.php" >
+        <i class="fas fa-shopping-basket" ></i>
+    </a>
+    <a class="btn" href="profile.html" >
+        <i class="fas fa-user" ></i>
+    </a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      
+    </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+        }
+    </script>
+
+<div id="mySidebar" class="sidebar">
+ 
+<!-- content -->
+<div class="p-5 container d-flex flex-wrap align-items-center float-right " style="position: absolute">
+
+  <div class="m-2 card" style="width:60rem;; padding-top: 20px;">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+ 
+    <img style="border-radius: 5%; width:19rem " src="0.jpg">
+
+ <br>
+ 
+  <div class="card-body" >
+        <i class="fas fa-star center" style="color: Tomato; font-size:12pt; display: inline-block;"> vip user   </i> 
+    <h3 class="center" >NAH NHANG MAH</h3> 
+    <h5 class="center"> order : 10001   |   review : 3</h5>
+    <br>
+    <br>
+
+    <h5 class="center " style="background-color: white;"> 
+    Thank you so much! <i class="far fa-kiss-beam"></i> </h5> <br>
+    <h5 class="center" style="background-color: white;"> 
+    We appriciate your words. </h5> <br>
+   <h5 class="center" style="background-color: white;"> 
+    Do you want to tell us more? </h5><br>
+
+<!-- <div> posted reviews</div> -->
+<a href="#"> <i class="fas fa-edit center p-5" style="color: Tomato; display: inline-block;" >  write more reviews </i></a>
+<br>
+
+  <button class="button button2 center">check order</button> <br>
+  <button class="button button2 center">log out</button>
+
+  </div>
+  </div>
+  </div>
+
+</div>
+</body>
+
+
+</html>
