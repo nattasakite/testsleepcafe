@@ -3,6 +3,6 @@
     "animate.css": "^4.1.1",
     "animatejs": "^1.0.1",
     "animejs": "^3.2.1"
-  }
+  },
   "scripts": {  "start": "node index.js" }
 }
